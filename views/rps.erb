@@ -1,0 +1,20 @@
+<h1 style="color: white; font-family: copperplate; font-size: 42px">Welcome to Rock, Paper, Scissors <%= @game.player.name%></h1>
+  <body bgcolor="#1D6EB0">
+    <br>
+    <div align="center">
+      <img src="http://anewplacevt.org/wp-content/uploads/RPS-jpg.jpg">
+    </div>
+    <h2 style="color: white; font-family: copperplate; font-size: 42px">Please select one of the following options to play:</h2>
+    <form action="/rpsresult" method="post">
+      <font face="copperplate" color="white" size="5" >
+        <div>
+          <input type="radio" name="options" id="kroot" value="Paper"> Paper<br>
+          <input type="radio" name="options" id="Rock" value="Rock"> Rock<br>
+          <input type="radio" name="options" id="Scissors" value="Scissors"> Scissors<br>
+        </div>
+      </font>
+      <div align="center">
+        <input type="submit" value = "Play!" style="font-family:'courier new'; color:black; font-size: 25px; height: 75; width: 330px"/>
+      </div>
+    </form>
+  </body>
